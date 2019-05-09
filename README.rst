@@ -114,8 +114,7 @@ An abbreviation is used in QEDA as a component preamble. It corresponds to subdi
 | `YAGEO <yageo>`__           | Yageo                   |
 +-----------------------------+-------------------------+
 | `WURTH <wurth>`__           | Wurth                   |
-+=============================+=========================+
-
++-----------------------------+-------------------------+
 
 Legal Notice
 ============
