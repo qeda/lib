@@ -1,12 +1,12 @@
 name: C0603
-description: Chip capacitor 1.6x0.8 mm
+description: Chip Capacitor 1.6x0.8 mm
 keywords: [Capacitor]
 
-schematic:
-  symbol: capacitor
+symbol:
+  type: capacitor
 
 package:
-  pattern: chip
+  type: chip
   body_x: 1.45-1.75
   body_y: 0.65-0.95
   height: 0.78-0.92
