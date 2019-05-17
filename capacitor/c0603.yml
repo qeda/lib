@@ -3,15 +3,12 @@ description: Chip Capacitor 1.6x0.8 mm
 keywords: [Capacitor]
 
 symbol:
-  type: capacitor
+  handler: capacitor
 
-package: &chip0603
-  type: chip
+pattern:
+  handler: chip
   body_x: 1.45-1.75
   body_y: 0.65-0.95
   height: 0.78-0.92
   lead_length: 0.2-0.5
-
-pattern:
-  package: *chip0603
 
