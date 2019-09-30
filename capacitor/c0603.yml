@@ -7,8 +7,8 @@ symbol:
 
 pattern:
   type: chip
-  body_x: 1.45-1.75
-  body_y: 0.65-0.95
-  height: 0.78-0.92
+  body_size_x: 1.45-1.75
+  body_size_y: 0.65-0.95
+  size_z: 0.78-0.92
   lead_length: 0.2-0.5
 
