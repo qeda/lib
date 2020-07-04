@@ -25,12 +25,12 @@ symbol:
     power: VIN, GND, PAD
 
 pattern:
-  outline: jedec/ms-012/ba
+  outline: jedec/ms-012@ba
 
-  pad_size: 2.2;0.5
-  pad_distance: 5.75
-  tab_size: 2.4;3.1
+  pad-size: 2.2;0.5
+  pad-distance: 5.75
+  tab-size: 2.4;3.1
 
-  via_diameter: 0.33
-  via_position: [-0.65;-1.3, 0.65;-1.3, -0.65;0, 0.65;0, -0.65;1.3, 0.65;1.3]
+  via-diameter: 0.33
+  via-position: [-0.65;-1.3, 0.65;-1.3, -0.65;0, 0.65;0, -0.65;1.3, 0.65;1.3]
 
