@@ -14,15 +14,16 @@ pinout:
   GND: 7
   PAD: 9
 
+pin-properties: # active-low, analog, clock, hi-z, in, inverted, io, nc, non-logic, open-collector, open-drain, open-emitter, open-source, out, passive, postponed, pull-down, pull-up, power, shift
+  in: VIN, EN, COMP, RT/CLK
+  out: BOOT, COMP
+  power: VIN, GND, PAD
+
 symbol:
   type: ic
   left: VIN, EN, COMP, RT/CLK
   right: BOOT, SW, FB
   bottom: GND, PAD
-  properties: # in, inverted, io, out, passive, power, z
-    in: VIN, EN, COMP, RT/CLK
-    out: BOOT, COMP
-    power: VIN, GND, PAD
 
 pattern:
   outline: jedec/ms-012@ba
