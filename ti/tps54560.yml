@@ -25,13 +25,13 @@ symbol:
   right: BOOT, SW, FB
   bottom: GND, PAD
 
-pattern:
+package:
   outline: jedec/ms-012@ba
 
+pattern:
   pad-size: 2.2;0.5
   pad-distance: 5.75
   tab-size: 2.4;3.1
 
   via-diameter: 0.33
   via-position: [-0.65;-1.3, 0.65;-1.3, -0.65;0, 0.65;0, -0.65;1.3, 0.65;1.3]
-
