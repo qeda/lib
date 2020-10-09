@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Prepare
+        run: curl -sL https://pkg.qeda.org/setup | sudo -E bash -
+
+      - name: Copy Library
+        run: rsync -av --exclude='.*' ./ ./deploy/
+
+      - name: Generate Index
+        run: |
+          cd deploy
+          qeda index .
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          cname: lib.qeda.org
+          force_orphan: true
+          user_name: 'qedabot'
+          user_email: 'qedabot@users.noreply.github.com'
